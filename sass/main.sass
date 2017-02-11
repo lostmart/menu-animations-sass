@@ -1,35 +1,41 @@
-// Structure
+//colors
+$prim-clr: #3F2860
+$sec-clr: #7A9A95
+
+.content
+  display: inline-block
+  width: 80%
+  float: left
 
 nav
   padding: 50px
 
-  
   > ul
     list-style: none
     padding: 0
     margin: 0
     display: inline-block
-    background: #ddd
+    background: $prim-clr
     border-radius: 5px
-    
+
     > li
-      width: 150px
+      color: rgba(255,255,255,0.7)
+      cursor: pointer
+      font-size: 14px
       height: 65px
       line-height: 65px
       position: relative
       text-transform: uppercase
-      font-size: 14px
-      color: rgba(0,0,0,0.7)
-      cursor: pointer
       text-align: center
       transition: all .6s linear 0s
-      
+      width: 150px
+
       &:hover
-        background: #666
+        background: $sec-clr
         border-radius: 5px
-        color: #fff
-        
-        
+        color: $prim-clr
+
+
 
 ul.drop-menu
   position: absolute
@@ -38,15 +44,15 @@ ul.drop-menu
   width: 100%
   padding: 0
 
-  
+
   li
-    background: #666
+    background: $prim-clr
     color: rgba(255,255,255,0.7)
-    
+
     &:hover
-        background: #606060
-        color: red
-    
+        background: $sec-clr
+        color: $prim-clr
+
     &:last-child
       border-radius: 0px 0px 5px 5px
 
@@ -56,21 +62,19 @@ ul.drop-menu li
 
 li:hover > ul.drop-menu li
   display: block // SHOW
-    
-
 
 
 
 
 // MENU 1 ---------------
 
-li:hover > ul.drop-menu.menu-1 
-    -webkit-perspective: 1000px;  // Chrome, Safari, Opera
+li:hover > ul.drop-menu.menu-1
+    -webkit-perspective: 1000px  // Chrome, Safari, Opera
     perspective: 1000px
 
     li
         opacity: 0
-    
+
         @for $i from 1 through 5
             &:nth-child(#{$i})
                 animation:
@@ -86,22 +90,22 @@ li:hover > ul.drop-menu.menu-1
         100%
             opacity: 1
              transform: rotateY(0deg) translateY(0px)
-        
-        
+
+
         // MENU 2 ---------------
 span
     margin: 0 35px
 
-        
-li:hover > ul.drop-menu.menu-2 
+
+li:hover > ul.drop-menu.menu-2
     -webkit-perspective: 1000px;  // Chrome, Safari, Opera
     perspective: 1000px
 
     li
         opacity: 0
         transform-origin: top center
-    
-    
+
+
         @for $i from 1 through 5
             &:nth-child(#{$i})
                 animation:
@@ -119,7 +123,7 @@ li:hover > ul.drop-menu.menu-2
             transform: rotateX(50deg) translateX(0px)
         60%
             opacity: 1
-            transform: rotateX(-20deg) translateX(0px)   
+            transform: rotateX(-20deg) translateX(0px)
         75%
             opacity: 1
             transform: rotateX(0deg) translateX(0px)
@@ -129,27 +133,27 @@ li:hover > ul.drop-menu.menu-2
         100%
             opacity: 1
             transform: rotateX(0deg) translateX(0px)
-        
-        
+
+
         // MENU 3 ---------------
 span
     margin: 0 35px
 
-        
-li:hover > ul.drop-menu.menu-3 
+
+li:hover > ul.drop-menu.menu-3
     -webkit-perspective: 1000px;  // Chrome, Safari, Opera
     perspective: 1000px
 
     li
         opacity: 0
         transform-origin: top center
-    
-    
+
+
         @for $i from 1 through 5
             &:nth-child(#{$i})
                 animation:
                     name: menu3
-                    duration: (470ms * $i) - 50
+                    duration: (350ms * $i) - 50
                     timing-function: ease-in-out
                     fill-mode: forwards
 
@@ -162,7 +166,7 @@ li:hover > ul.drop-menu.menu-3
             transform: rotateX(50deg) translateZ(40px)
         60%
             opacity: 0.6
-            transform: rotateX(-20deg) translateZ(0px)   
+            transform: rotateX(-20deg) translateZ(0px)
         75%
             opacity: 0.7
             transform: rotateX(0deg) translateZ(0px)
@@ -172,3 +176,48 @@ li:hover > ul.drop-menu.menu-3
         100%
             opacity: 1
             transform: rotateX(0deg) translateZ(0px)
+
+        // MENU 4 ---------------
+span
+    margin: 0 35px
+
+
+li:hover > ul.drop-menu.menu-4
+    -webkit-perspective: 1000px;  // Chrome, Safari, Opera
+    perspective: 1000px
+
+    li
+        opacity: 0
+        transform-origin: top left
+
+
+        @for $i from 1 through 5
+            &:nth-child(#{$i})
+                animation:
+                    name: menu4
+                    duration: 530ms
+                    delay: (250ms * $i) - 250
+                    timing-function: ease-in-out
+                    fill-mode: forwards
+
+    @keyframes menu4
+        0%
+            opacity: 0
+            transform: rotateZ(-90deg)
+            background: $prim-clr
+        50%
+            opacity: 0.6
+            transform: rotateZ(50deg)
+        60%
+            opacity: 0.6
+            transform: rotateZ(-30deg)
+        75%
+            opacity: 0.7
+            transform: rotateZ(10deg)
+        85%
+            opacity: 0.9
+            transform: rotateZ(-5deg)
+        100%
+            opacity: 1
+            transform: rotateZ(0deg)
+            background: $sec-clr
