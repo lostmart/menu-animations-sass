@@ -6,16 +6,30 @@ body {
 /* line 8, C:/Users/martin/Documents/HTMLs/menu-animations-sass/sass/main.sass */
 .content {
   display: inline-block;
-  width: 80%;
+  width: 50%;
   float: left;
+  margin: 50px 20px;
+  background: #d4d4d6;
+  padding: 15px;
+  border-radius: 5px;
 }
 
-/* line 13, C:/Users/martin/Documents/HTMLs/menu-animations-sass/sass/main.sass */
+/* line 17, C:/Users/martin/Documents/HTMLs/menu-animations-sass/sass/main.sass */
+h1 {
+  color: #3F2860;
+  text-align: center;
+}
+
+/* line 21, C:/Users/martin/Documents/HTMLs/menu-animations-sass/sass/main.sass */
 nav {
   padding: 50px;
+  width: 20%;
+  display: inline-block;
+  float: left;
+  margin-right: 20px;
 }
 
-/* line 16, C:/Users/martin/Documents/HTMLs/menu-animations-sass/sass/main.sass */
+/* line 28, C:/Users/martin/Documents/HTMLs/menu-animations-sass/sass/main.sass */
 nav > ul {
   list-style: none;
   padding: 0;
@@ -25,7 +39,7 @@ nav > ul {
   border-radius: 5px;
 }
 
-/* line 24, C:/Users/martin/Documents/HTMLs/menu-animations-sass/sass/main.sass */
+/* line 36, C:/Users/martin/Documents/HTMLs/menu-animations-sass/sass/main.sass */
 nav > ul > li {
   color: rgba(255, 255, 255, 0.7);
   cursor: pointer;
@@ -39,14 +53,14 @@ nav > ul > li {
   width: 150px;
 }
 
-/* line 36, C:/Users/martin/Documents/HTMLs/menu-animations-sass/sass/main.sass */
+/* line 48, C:/Users/martin/Documents/HTMLs/menu-animations-sass/sass/main.sass */
 nav > ul > li:hover {
   background: #7A9A95;
   border-radius: 5px;
   color: #3F2860;
 }
 
-/* line 43, C:/Users/martin/Documents/HTMLs/menu-animations-sass/sass/main.sass */
+/* line 55, C:/Users/martin/Documents/HTMLs/menu-animations-sass/sass/main.sass */
 ul.drop-menu {
   position: absolute;
   top: 2%;
@@ -55,45 +69,45 @@ ul.drop-menu {
   padding: 0;
 }
 
-/* line 51, C:/Users/martin/Documents/HTMLs/menu-animations-sass/sass/main.sass */
+/* line 63, C:/Users/martin/Documents/HTMLs/menu-animations-sass/sass/main.sass */
 ul.drop-menu li {
   background: #3F2860;
   color: rgba(255, 255, 255, 0.7);
 }
 
-/* line 55, C:/Users/martin/Documents/HTMLs/menu-animations-sass/sass/main.sass */
+/* line 67, C:/Users/martin/Documents/HTMLs/menu-animations-sass/sass/main.sass */
 ul.drop-menu li:hover {
   background: #7A9A95;
   color: #3F2860;
 }
 
-/* line 59, C:/Users/martin/Documents/HTMLs/menu-animations-sass/sass/main.sass */
+/* line 71, C:/Users/martin/Documents/HTMLs/menu-animations-sass/sass/main.sass */
 ul.drop-menu li:last-child {
   border-radius: 0px 0px 5px 5px;
 }
 
-/* line 63, C:/Users/martin/Documents/HTMLs/menu-animations-sass/sass/main.sass */
+/* line 75, C:/Users/martin/Documents/HTMLs/menu-animations-sass/sass/main.sass */
 ul.drop-menu li {
   display: none;
 }
 
-/* line 66, C:/Users/martin/Documents/HTMLs/menu-animations-sass/sass/main.sass */
+/* line 78, C:/Users/martin/Documents/HTMLs/menu-animations-sass/sass/main.sass */
 li:hover > ul.drop-menu li {
   display: block;
 }
 
-/* line 74, C:/Users/martin/Documents/HTMLs/menu-animations-sass/sass/main.sass */
+/* line 86, C:/Users/martin/Documents/HTMLs/menu-animations-sass/sass/main.sass */
 li:hover > ul.drop-menu.menu-1 {
   -webkit-perspective: 1000px;
   perspective: 1000px;
 }
 
-/* line 78, C:/Users/martin/Documents/HTMLs/menu-animations-sass/sass/main.sass */
+/* line 90, C:/Users/martin/Documents/HTMLs/menu-animations-sass/sass/main.sass */
 li:hover > ul.drop-menu.menu-1 li {
   opacity: 0;
 }
 
-/* line 82, C:/Users/martin/Documents/HTMLs/menu-animations-sass/sass/main.sass */
+/* line 94, C:/Users/martin/Documents/HTMLs/menu-animations-sass/sass/main.sass */
 li:hover > ul.drop-menu.menu-1 li:nth-child(1) {
   animation-name: menu1;
   animation-duration: 100ms;
@@ -101,7 +115,7 @@ li:hover > ul.drop-menu.menu-1 li:nth-child(1) {
   animation-fill-mode: forwards;
 }
 
-/* line 82, C:/Users/martin/Documents/HTMLs/menu-animations-sass/sass/main.sass */
+/* line 94, C:/Users/martin/Documents/HTMLs/menu-animations-sass/sass/main.sass */
 li:hover > ul.drop-menu.menu-1 li:nth-child(2) {
   animation-name: menu1;
   animation-duration: 350ms;
@@ -109,7 +123,7 @@ li:hover > ul.drop-menu.menu-1 li:nth-child(2) {
   animation-fill-mode: forwards;
 }
 
-/* line 82, C:/Users/martin/Documents/HTMLs/menu-animations-sass/sass/main.sass */
+/* line 94, C:/Users/martin/Documents/HTMLs/menu-animations-sass/sass/main.sass */
 li:hover > ul.drop-menu.menu-1 li:nth-child(3) {
   animation-name: menu1;
   animation-duration: 600ms;
@@ -117,7 +131,7 @@ li:hover > ul.drop-menu.menu-1 li:nth-child(3) {
   animation-fill-mode: forwards;
 }
 
-/* line 82, C:/Users/martin/Documents/HTMLs/menu-animations-sass/sass/main.sass */
+/* line 94, C:/Users/martin/Documents/HTMLs/menu-animations-sass/sass/main.sass */
 li:hover > ul.drop-menu.menu-1 li:nth-child(4) {
   animation-name: menu1;
   animation-duration: 850ms;
@@ -125,7 +139,7 @@ li:hover > ul.drop-menu.menu-1 li:nth-child(4) {
   animation-fill-mode: forwards;
 }
 
-/* line 82, C:/Users/martin/Documents/HTMLs/menu-animations-sass/sass/main.sass */
+/* line 94, C:/Users/martin/Documents/HTMLs/menu-animations-sass/sass/main.sass */
 li:hover > ul.drop-menu.menu-1 li:nth-child(5) {
   animation-name: menu1;
   animation-duration: 1100ms;
@@ -144,24 +158,24 @@ li:hover > ul.drop-menu.menu-1 li:nth-child(5) {
   }
 }
 
-/* line 99, C:/Users/martin/Documents/HTMLs/menu-animations-sass/sass/main.sass */
+/* line 111, C:/Users/martin/Documents/HTMLs/menu-animations-sass/sass/main.sass */
 span {
   margin: 0 35px;
 }
 
-/* line 103, C:/Users/martin/Documents/HTMLs/menu-animations-sass/sass/main.sass */
+/* line 115, C:/Users/martin/Documents/HTMLs/menu-animations-sass/sass/main.sass */
 li:hover > ul.drop-menu.menu-2 {
   -webkit-perspective: 1000px;
   perspective: 1000px;
 }
 
-/* line 107, C:/Users/martin/Documents/HTMLs/menu-animations-sass/sass/main.sass */
+/* line 119, C:/Users/martin/Documents/HTMLs/menu-animations-sass/sass/main.sass */
 li:hover > ul.drop-menu.menu-2 li {
   opacity: 0;
   transform-origin: top center;
 }
 
-/* line 113, C:/Users/martin/Documents/HTMLs/menu-animations-sass/sass/main.sass */
+/* line 125, C:/Users/martin/Documents/HTMLs/menu-animations-sass/sass/main.sass */
 li:hover > ul.drop-menu.menu-2 li:nth-child(1) {
   animation-name: menu2;
   animation-duration: 320ms;
@@ -169,7 +183,7 @@ li:hover > ul.drop-menu.menu-2 li:nth-child(1) {
   animation-fill-mode: forwards;
 }
 
-/* line 113, C:/Users/martin/Documents/HTMLs/menu-animations-sass/sass/main.sass */
+/* line 125, C:/Users/martin/Documents/HTMLs/menu-animations-sass/sass/main.sass */
 li:hover > ul.drop-menu.menu-2 li:nth-child(2) {
   animation-name: menu2;
   animation-duration: 690ms;
@@ -177,7 +191,7 @@ li:hover > ul.drop-menu.menu-2 li:nth-child(2) {
   animation-fill-mode: forwards;
 }
 
-/* line 113, C:/Users/martin/Documents/HTMLs/menu-animations-sass/sass/main.sass */
+/* line 125, C:/Users/martin/Documents/HTMLs/menu-animations-sass/sass/main.sass */
 li:hover > ul.drop-menu.menu-2 li:nth-child(3) {
   animation-name: menu2;
   animation-duration: 1060ms;
@@ -185,7 +199,7 @@ li:hover > ul.drop-menu.menu-2 li:nth-child(3) {
   animation-fill-mode: forwards;
 }
 
-/* line 113, C:/Users/martin/Documents/HTMLs/menu-animations-sass/sass/main.sass */
+/* line 125, C:/Users/martin/Documents/HTMLs/menu-animations-sass/sass/main.sass */
 li:hover > ul.drop-menu.menu-2 li:nth-child(4) {
   animation-name: menu2;
   animation-duration: 1430ms;
@@ -193,7 +207,7 @@ li:hover > ul.drop-menu.menu-2 li:nth-child(4) {
   animation-fill-mode: forwards;
 }
 
-/* line 113, C:/Users/martin/Documents/HTMLs/menu-animations-sass/sass/main.sass */
+/* line 125, C:/Users/martin/Documents/HTMLs/menu-animations-sass/sass/main.sass */
 li:hover > ul.drop-menu.menu-2 li:nth-child(5) {
   animation-name: menu2;
   animation-duration: 1800ms;
@@ -228,24 +242,24 @@ li:hover > ul.drop-menu.menu-2 li:nth-child(5) {
   }
 }
 
-/* line 142, C:/Users/martin/Documents/HTMLs/menu-animations-sass/sass/main.sass */
+/* line 154, C:/Users/martin/Documents/HTMLs/menu-animations-sass/sass/main.sass */
 span {
   margin: 0 35px;
 }
 
-/* line 146, C:/Users/martin/Documents/HTMLs/menu-animations-sass/sass/main.sass */
+/* line 158, C:/Users/martin/Documents/HTMLs/menu-animations-sass/sass/main.sass */
 li:hover > ul.drop-menu.menu-3 {
   -webkit-perspective: 1000px;
   perspective: 1000px;
 }
 
-/* line 150, C:/Users/martin/Documents/HTMLs/menu-animations-sass/sass/main.sass */
+/* line 162, C:/Users/martin/Documents/HTMLs/menu-animations-sass/sass/main.sass */
 li:hover > ul.drop-menu.menu-3 li {
   opacity: 0;
   transform-origin: top center;
 }
 
-/* line 156, C:/Users/martin/Documents/HTMLs/menu-animations-sass/sass/main.sass */
+/* line 168, C:/Users/martin/Documents/HTMLs/menu-animations-sass/sass/main.sass */
 li:hover > ul.drop-menu.menu-3 li:nth-child(1) {
   animation-name: menu3;
   animation-duration: 300ms;
@@ -253,7 +267,7 @@ li:hover > ul.drop-menu.menu-3 li:nth-child(1) {
   animation-fill-mode: forwards;
 }
 
-/* line 156, C:/Users/martin/Documents/HTMLs/menu-animations-sass/sass/main.sass */
+/* line 168, C:/Users/martin/Documents/HTMLs/menu-animations-sass/sass/main.sass */
 li:hover > ul.drop-menu.menu-3 li:nth-child(2) {
   animation-name: menu3;
   animation-duration: 650ms;
@@ -261,7 +275,7 @@ li:hover > ul.drop-menu.menu-3 li:nth-child(2) {
   animation-fill-mode: forwards;
 }
 
-/* line 156, C:/Users/martin/Documents/HTMLs/menu-animations-sass/sass/main.sass */
+/* line 168, C:/Users/martin/Documents/HTMLs/menu-animations-sass/sass/main.sass */
 li:hover > ul.drop-menu.menu-3 li:nth-child(3) {
   animation-name: menu3;
   animation-duration: 1000ms;
@@ -269,7 +283,7 @@ li:hover > ul.drop-menu.menu-3 li:nth-child(3) {
   animation-fill-mode: forwards;
 }
 
-/* line 156, C:/Users/martin/Documents/HTMLs/menu-animations-sass/sass/main.sass */
+/* line 168, C:/Users/martin/Documents/HTMLs/menu-animations-sass/sass/main.sass */
 li:hover > ul.drop-menu.menu-3 li:nth-child(4) {
   animation-name: menu3;
   animation-duration: 1350ms;
@@ -277,7 +291,7 @@ li:hover > ul.drop-menu.menu-3 li:nth-child(4) {
   animation-fill-mode: forwards;
 }
 
-/* line 156, C:/Users/martin/Documents/HTMLs/menu-animations-sass/sass/main.sass */
+/* line 168, C:/Users/martin/Documents/HTMLs/menu-animations-sass/sass/main.sass */
 li:hover > ul.drop-menu.menu-3 li:nth-child(5) {
   animation-name: menu3;
   animation-duration: 1700ms;
@@ -312,24 +326,24 @@ li:hover > ul.drop-menu.menu-3 li:nth-child(5) {
   }
 }
 
-/* line 184, C:/Users/martin/Documents/HTMLs/menu-animations-sass/sass/main.sass */
+/* line 196, C:/Users/martin/Documents/HTMLs/menu-animations-sass/sass/main.sass */
 span {
   margin: 0 35px;
 }
 
-/* line 188, C:/Users/martin/Documents/HTMLs/menu-animations-sass/sass/main.sass */
+/* line 200, C:/Users/martin/Documents/HTMLs/menu-animations-sass/sass/main.sass */
 li:hover > ul.drop-menu.menu-4 {
   -webkit-perspective: 1000px;
   perspective: 1000px;
 }
 
-/* line 192, C:/Users/martin/Documents/HTMLs/menu-animations-sass/sass/main.sass */
+/* line 204, C:/Users/martin/Documents/HTMLs/menu-animations-sass/sass/main.sass */
 li:hover > ul.drop-menu.menu-4 li {
   opacity: 0;
   transform-origin: top left;
 }
 
-/* line 198, C:/Users/martin/Documents/HTMLs/menu-animations-sass/sass/main.sass */
+/* line 210, C:/Users/martin/Documents/HTMLs/menu-animations-sass/sass/main.sass */
 li:hover > ul.drop-menu.menu-4 li:nth-child(1) {
   animation-name: menu4;
   animation-duration: 530ms;
@@ -338,7 +352,7 @@ li:hover > ul.drop-menu.menu-4 li:nth-child(1) {
   animation-fill-mode: forwards;
 }
 
-/* line 198, C:/Users/martin/Documents/HTMLs/menu-animations-sass/sass/main.sass */
+/* line 210, C:/Users/martin/Documents/HTMLs/menu-animations-sass/sass/main.sass */
 li:hover > ul.drop-menu.menu-4 li:nth-child(2) {
   animation-name: menu4;
   animation-duration: 530ms;
@@ -347,7 +361,7 @@ li:hover > ul.drop-menu.menu-4 li:nth-child(2) {
   animation-fill-mode: forwards;
 }
 
-/* line 198, C:/Users/martin/Documents/HTMLs/menu-animations-sass/sass/main.sass */
+/* line 210, C:/Users/martin/Documents/HTMLs/menu-animations-sass/sass/main.sass */
 li:hover > ul.drop-menu.menu-4 li:nth-child(3) {
   animation-name: menu4;
   animation-duration: 530ms;
@@ -356,7 +370,7 @@ li:hover > ul.drop-menu.menu-4 li:nth-child(3) {
   animation-fill-mode: forwards;
 }
 
-/* line 198, C:/Users/martin/Documents/HTMLs/menu-animations-sass/sass/main.sass */
+/* line 210, C:/Users/martin/Documents/HTMLs/menu-animations-sass/sass/main.sass */
 li:hover > ul.drop-menu.menu-4 li:nth-child(4) {
   animation-name: menu4;
   animation-duration: 530ms;
@@ -365,7 +379,7 @@ li:hover > ul.drop-menu.menu-4 li:nth-child(4) {
   animation-fill-mode: forwards;
 }
 
-/* line 198, C:/Users/martin/Documents/HTMLs/menu-animations-sass/sass/main.sass */
+/* line 210, C:/Users/martin/Documents/HTMLs/menu-animations-sass/sass/main.sass */
 li:hover > ul.drop-menu.menu-4 li:nth-child(5) {
   animation-name: menu4;
   animation-duration: 530ms;
